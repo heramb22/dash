@@ -31,9 +31,7 @@
         name: "{{ item }}"
         state: latest
       with_items:
-        - docker
-        - docker-machine
-        - docker-compose
+        - dockertoolbox
 
     - name: Create resolver directory
       file: path=/etc/resolver state=directory mode=0755
